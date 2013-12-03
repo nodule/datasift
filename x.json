@@ -40,7 +40,7 @@
       "title": "Datasift api",
       "ns": "datasift",
       "name": "api",
-      "fn": "var consumer = new datashift(input.username, input.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: consumer\n};\n"
+      "fn": "var consumer = new datasift(input.username, input.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: consumer\n};\n"
     },
     {
       "ports": {
