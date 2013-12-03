@@ -1,0 +1,20 @@
+{
+  "name": "unsubscribe",
+  "ns": "datashift",
+  "title": "DataShift unsubscribe",
+  "description": "unsubscribe",
+  "phrases": {
+    "active": "Datashift unsubscribe"
+  },
+  "ports": {
+    "input": {
+      "hash": {
+        "title": "Service Hash",
+        "type": "string",
+        "required": "true"
+      }
+    },
+    "output": {
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "interaction",
+  "ns": "datashift",
+  "title": "DataShift interaction",
+  "description": "interaction",
+  "phrases": {
+    "active": "Datashift interaction"
+  },
+  "ports": {
+    "input": {
+      "consumer": {
+        "title": "Consumer",
+        "type": "function",
+        "required": "true"
+      }
+    },
+    "output": {
+      "data": {
+        "type": "object"
+      }
+    }
+  }
+}

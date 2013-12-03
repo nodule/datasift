@@ -1,0 +1,20 @@
+{
+  "name": "subscribe",
+  "ns": "datashift",
+  "title": "DataShift subscribe",
+  "description": "subscribe",
+  "phrases": {
+    "active": "Datashift subscribe"
+  },
+  "ports": {
+    "input": {
+      "hash": {
+        "title": "Service Hash",
+        "type": "string",
+        "required": "true"
+      }
+    },
+    "output": {
+    }
+  }
+}

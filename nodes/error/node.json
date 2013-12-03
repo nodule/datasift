@@ -1,0 +1,23 @@
+{
+  "name": "error",
+  "ns": "datashift",
+  "title": "DataShift error",
+  "description": "error",
+  "phrases": {
+    "active": "Datashift error"
+  },
+  "ports": {
+    "input": {
+      "consumer": {
+        "title": "Consumer",
+        "type": "function",
+        "required": "true"
+      }
+    },
+    "output": {
+      "error": {
+        "type": "object"
+      }
+    }
+  }
+}

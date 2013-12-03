@@ -1,0 +1,23 @@
+{
+  "name": "disconnect",
+  "ns": "datashift",
+  "title": "DataShift disconnect",
+  "description": "disconnect",
+  "phrases": {
+    "active": "Datashift disconnect"
+  },
+  "ports": {
+    "input": {
+      "consumer": {
+        "title": "Consumer",
+        "type": "function",
+        "required": "true"
+      }
+    },
+    "output": {
+      "out": {
+        "type": "any"
+      }
+    }
+  }
+}

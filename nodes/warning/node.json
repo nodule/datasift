@@ -1,0 +1,23 @@
+{
+  "name": "warning",
+  "ns": "datashift",
+  "title": "DataShift warning",
+  "description": "warning",
+  "phrases": {
+    "active": "Datashift warning"
+  },
+  "ports": {
+    "input": {
+      "consumer": {
+        "title": "Consumer",
+        "type": "function",
+        "required": "true"
+      }
+    },
+    "output": {
+      "warning": {
+        "type": "string"
+      }
+    }
+  }
+}

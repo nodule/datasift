@@ -1,0 +1,23 @@
+{
+  "name": "delete",
+  "ns": "datashift",
+  "title": "DataShift Delete",
+  "description": "Delete",
+  "phrases": {
+    "active": "Datashift Delete"
+  },
+  "ports": {
+    "input": {
+      "consumer": {
+        "title": "Consumer",
+        "type": "function",
+        "required": "true"
+      }
+    },
+    "output": {
+      "data": {
+        "type": "object"
+      }
+    }
+  }
+}
