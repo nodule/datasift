@@ -7,7 +7,7 @@
     "url": "https://github.com/nodule/datasift.git"
   },
   "dependencies": {
-    "datasift": "datasift/NodeJS-Consumer"
+    "datasift": "latest"
   },
   "nodes": [
     {
@@ -31,7 +31,7 @@
         }
       },
       "require": {
-        "datasift": "datasift/NodeJS-Consumer"
+        "datasift": "latest"
       },
       "phrases": {
         "active": "Connecting to datasift"

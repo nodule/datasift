@@ -7,7 +7,7 @@
     "active": "Connecting to datasift"
   },
   "require": {
-    "datasift": "datasift/NodeJS-Consumer"
+    "datasift": "latest"
   },
   "ports": {
     "input": {

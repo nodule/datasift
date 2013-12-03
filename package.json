@@ -16,7 +16,7 @@
     "test": "chit -r"
   },
   "dependencies": {
-    "datasift": "datasift/NodeJS-Consumer"
+    "datasift": "latest"
   },
   "devDependencies": {
     "chit": "0.x.x"
