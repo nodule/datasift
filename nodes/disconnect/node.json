@@ -1,10 +1,10 @@
 {
   "name": "disconnect",
-  "ns": "datashift",
-  "title": "DataShift disconnect",
+  "ns": "datasift",
+  "title": "DataSift disconnect",
   "description": "disconnect",
   "phrases": {
-    "active": "Datashift disconnect"
+    "active": "Datasift disconnect"
   },
   "ports": {
     "input": {

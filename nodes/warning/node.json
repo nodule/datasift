@@ -1,10 +1,10 @@
 {
   "name": "warning",
-  "ns": "datashift",
-  "title": "DataShift warning",
+  "ns": "datasift",
+  "title": "DataSift warning",
   "description": "warning",
   "phrases": {
-    "active": "Datashift warning"
+    "active": "Datasift warning"
   },
   "ports": {
     "input": {

@@ -1,13 +1,13 @@
 {
   "name": "api",
-  "ns": "datashift",
-  "title": "DataShift api",
-  "description": "Api to datashift",
+  "ns": "datasift",
+  "title": "Datasift api",
+  "description": "Api to datasift",
   "phrases": {
-    "active": "Connecting to datashift"
+    "active": "Connecting to datasift"
   },
   "require": {
-    "datashift": "datashift/NodeJS-Consumer"
+    "datasift": "datasift/NodeJS-Consumer"
   },
   "ports": {
     "input": {

@@ -31,14 +31,14 @@
         }
       },
       "require": {
-        "datashift": "datashift/NodeJS-Consumer"
+        "datasift": "datasift/NodeJS-Consumer"
       },
       "phrases": {
-        "active": "Connecting to datashift"
+        "active": "Connecting to datasift"
       },
-      "description": "Api to datashift",
-      "title": "DataShift api",
-      "ns": "datashift",
+      "description": "Api to datasift",
+      "title": "Datasift api",
+      "ns": "datasift",
       "name": "api",
       "fn": "var consumer = new datashift(input.username, input.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: consumer\n};\n"
     },
@@ -58,11 +58,11 @@
         }
       },
       "phrases": {
-        "active": "Datashift Delete"
+        "active": "Datasift Delete"
       },
       "description": "Delete",
-      "title": "DataShift Delete",
-      "ns": "datashift",
+      "title": "DataSift Delete",
+      "ns": "datasift",
       "name": "delete",
       "fn": "output = [input.consumer, 'on', 'delete']\n"
     },
@@ -82,11 +82,11 @@
         }
       },
       "phrases": {
-        "active": "Datashift disconnect"
+        "active": "Datasift disconnect"
       },
       "description": "disconnect",
-      "title": "DataShift disconnect",
-      "ns": "datashift",
+      "title": "DataSift disconnect",
+      "ns": "datasift",
       "name": "disconnect",
       "fn": "output = [input.consumer, 'on', 'disconnect']\n"
     },
@@ -106,11 +106,11 @@
         }
       },
       "phrases": {
-        "active": "Datashift error"
+        "active": "Datasift error"
       },
       "description": "error",
-      "title": "DataShift error",
-      "ns": "datashift",
+      "title": "DataSift error",
+      "ns": "datasift",
       "name": "error",
       "fn": "output = [input.consumer, 'on', 'error']\n"
     },
@@ -130,11 +130,11 @@
         }
       },
       "phrases": {
-        "active": "Datashift interaction"
+        "active": "Datasift interaction"
       },
       "description": "interaction",
-      "title": "DataShift interaction",
-      "ns": "datashift",
+      "title": "DataSift interaction",
+      "ns": "datasift",
       "name": "interaction",
       "fn": "output = [input.consumer, 'on', 'interaction']\n"
     },
@@ -155,11 +155,11 @@
         "output": {}
       },
       "phrases": {
-        "active": "Datashift subscribe"
+        "active": "Datasift subscribe"
       },
       "description": "subscribe",
-      "title": "DataShift subscribe",
-      "ns": "datashift",
+      "title": "DataSift subscribe",
+      "ns": "datasift",
       "name": "subscribe",
       "fn": "input.consumer.subscribe(input.hash);\n"
     },
@@ -180,11 +180,11 @@
         "output": {}
       },
       "phrases": {
-        "active": "Datashift unsubscribe"
+        "active": "Datasift unsubscribe"
       },
       "description": "unsubscribe",
-      "title": "DataShift unsubscribe",
-      "ns": "datashift",
+      "title": "DataSift unsubscribe",
+      "ns": "datasift",
       "name": "unsubscribe",
       "fn": "input.consumer.unsubscribe(input.hash);\n"
     },
@@ -204,11 +204,11 @@
         }
       },
       "phrases": {
-        "active": "Datashift warning"
+        "active": "Datasift warning"
       },
       "description": "warning",
-      "title": "DataShift warning",
-      "ns": "datashift",
+      "title": "DataSift warning",
+      "ns": "datasift",
       "name": "warning",
       "fn": "output = [input.consumer, 'on', 'warning']\n"
     }

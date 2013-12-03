@@ -1,10 +1,10 @@
 {
   "name": "subscribe",
-  "ns": "datashift",
-  "title": "DataShift subscribe",
+  "ns": "datasift",
+  "title": "DataSift subscribe",
   "description": "subscribe",
   "phrases": {
-    "active": "Datashift subscribe"
+    "active": "Datasift subscribe"
   },
   "ports": {
     "input": {

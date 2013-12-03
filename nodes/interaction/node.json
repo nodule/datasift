@@ -1,10 +1,10 @@
 {
   "name": "interaction",
-  "ns": "datashift",
-  "title": "DataShift interaction",
+  "ns": "datasift",
+  "title": "DataSift interaction",
   "description": "interaction",
   "phrases": {
-    "active": "Datashift interaction"
+    "active": "Datasift interaction"
   },
   "ports": {
     "input": {

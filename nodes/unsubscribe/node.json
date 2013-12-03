@@ -1,10 +1,10 @@
 {
   "name": "unsubscribe",
-  "ns": "datashift",
-  "title": "DataShift unsubscribe",
+  "ns": "datasift",
+  "title": "DataSift unsubscribe",
   "description": "unsubscribe",
   "phrases": {
-    "active": "Datashift unsubscribe"
+    "active": "Datasift unsubscribe"
   },
   "ports": {
     "input": {

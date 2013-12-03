@@ -1,10 +1,10 @@
 {
   "name": "delete",
-  "ns": "datashift",
-  "title": "DataShift Delete",
+  "ns": "datasift",
+  "title": "DataSift Delete",
   "description": "Delete",
   "phrases": {
-    "active": "Datashift Delete"
+    "active": "Datasift Delete"
   },
   "ports": {
     "input": {

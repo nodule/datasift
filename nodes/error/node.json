@@ -1,10 +1,10 @@
 {
   "name": "error",
-  "ns": "datashift",
-  "title": "DataShift error",
+  "ns": "datasift",
+  "title": "DataSift error",
   "description": "error",
   "phrases": {
-    "active": "Datashift error"
+    "active": "Datasift error"
   },
   "ports": {
     "input": {
