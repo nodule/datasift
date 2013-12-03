@@ -8,6 +8,11 @@
   },
   "ports": {
     "input": {
+      "consumer": {
+        "title": "Consumer",
+        "type": "function",
+        "required": "true"
+      },
       "hash": {
         "title": "Service Hash",
         "type": "string",
