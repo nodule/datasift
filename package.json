@@ -23,6 +23,7 @@
   },
   "chix": {
     "name": "datasift",
+    "env": "server",
     "color": "rgb(25,116,136)"
   }
 }
