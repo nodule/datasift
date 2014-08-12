@@ -40,6 +40,7 @@
       "title": "Datasift api",
       "ns": "datasift",
       "name": "api",
+      "env": "server",
       "fn": "var consumer = new datasift(input.username, input.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: consumer\n};\n"
     },
     {
@@ -102,6 +103,7 @@
       "title": "DataSift Connect",
       "ns": "datasift",
       "name": "connect",
+      "env": "server",
       "fn": "var consumer = new datasift(input.username, input.api_key);\nconsumer.connect();\n\n//Emitted when stream is connected\nif (input.connect) consumer.on('connect', input.connect);\n\n//Emitted when there is an error\nif (input.error) consumer.on('error', input.error);\n\n//Emitted when there is a warning\nif (input.warning) consumer.on('warning', input.warning);\n\n//Emitted when disconnected\nif (iput.disconnect) consumer.on('disconnect', input.disconnect);\n\n//Emitted when an interaction is received\nif (input.interaction) consumer.on('interaction', input.interaction);\n\n//Emitted when a delete message is received\nif (input.delete) consumer.on('delete', input.delete);\n\noutput = {\n  consumer: consumer\n};\n"
     },
     {
@@ -126,6 +128,7 @@
       "title": "DataSift Delete",
       "ns": "datasift",
       "name": "delete",
+      "env": "server",
       "fn": "output = [input.consumer, 'on', 'delete']\n"
     },
     {
@@ -150,6 +153,7 @@
       "title": "DataSift disconnect",
       "ns": "datasift",
       "name": "disconnect",
+      "env": "server",
       "fn": "output = [input.consumer, 'on', 'disconnect']\n"
     },
     {
@@ -174,6 +178,7 @@
       "title": "DataSift error",
       "ns": "datasift",
       "name": "error",
+      "env": "server",
       "fn": "output = [input.consumer, 'on', 'error']\n"
     },
     {
@@ -198,6 +203,7 @@
       "title": "DataSift interaction",
       "ns": "datasift",
       "name": "interaction",
+      "env": "server",
       "fn": "output = [input.consumer, 'on', 'interaction']\n"
     },
     {
@@ -223,6 +229,7 @@
       "title": "DataSift subscribe",
       "ns": "datasift",
       "name": "subscribe",
+      "env": "server",
       "fn": "input.consumer.subscribe(input.hash);\n"
     },
     {
@@ -248,6 +255,7 @@
       "title": "DataSift unsubscribe",
       "ns": "datasift",
       "name": "unsubscribe",
+      "env": "server",
       "fn": "input.consumer.unsubscribe(input.hash);\n"
     },
     {
@@ -272,8 +280,10 @@
       "title": "DataSift warning",
       "ns": "datasift",
       "name": "warning",
+      "env": "server",
       "fn": "output = [input.consumer, 'on', 'warning']\n"
     }
   ],
-  "twigs": []
+  "twigs": [],
+  "env": "server"
 }
