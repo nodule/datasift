@@ -6,9 +6,6 @@
   "phrases": {
     "active": "Connecting to datasift"
   },
-  "require": {
-    "datasift": "datasift/NodeJS-Consumer"
-  },
   "ports": {
     "input": {
       "username": {
@@ -56,6 +53,11 @@
       "consumer": {
         "type": "function"
       }
+    }
+  },
+  "dependencies": {
+    "npm": {
+      "datasift": "datasift/NodeJS-Consumer"
     }
   }
 }

@@ -11,6 +11,11 @@
   },
   "nodes": [
     {
+      "dependencies": {
+        "npm": {
+          "datasift": "latest"
+        }
+      },
       "ports": {
         "input": {
           "username": {
@@ -30,9 +35,6 @@
           }
         }
       },
-      "require": {
-        "datasift": "latest"
-      },
       "phrases": {
         "active": "Connecting to datasift"
       },
@@ -44,6 +46,11 @@
       "fn": "var consumer = new datasift(input.username, input.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: consumer\n};\n"
     },
     {
+      "dependencies": {
+        "npm": {
+          "datasift": "datasift/NodeJS-Consumer"
+        }
+      },
       "ports": {
         "input": {
           "username": {
@@ -92,9 +99,6 @@
             "type": "function"
           }
         }
-      },
-      "require": {
-        "datasift": "datasift/NodeJS-Consumer"
       },
       "phrases": {
         "active": "Connecting to datasift"
