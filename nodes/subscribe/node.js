@@ -1,1 +1,3 @@
-input.consumer.subscribe(input.hash);
+on.input.hash = function() {
+  input.consumer.subscribe(data);
+};
