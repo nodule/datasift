@@ -11,7 +11,7 @@ if (input.error) consumer.on('error', input.error);
 if (input.warning) consumer.on('warning', input.warning);
 
 //Emitted when disconnected
-if (iput.disconnect) consumer.on('disconnect', input.disconnect);
+if (input.disconnect) consumer.on('disconnect', input.disconnect);
 
 //Emitted when an interaction is received
 if (input.interaction) consumer.on('interaction', input.interaction);
