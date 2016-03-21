@@ -1,1 +1,1 @@
-output = [input.consumer, 'on', 'delete']
+output = [$.consumer, 'on', 'delete']

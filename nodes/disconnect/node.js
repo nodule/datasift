@@ -1,1 +1,1 @@
-output = [input.consumer, 'on', 'disconnect']
+output = [$.consumer, 'on', 'disconnect']

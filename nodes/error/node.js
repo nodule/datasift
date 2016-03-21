@@ -1,1 +1,1 @@
-output = [input.consumer, 'on', 'error']
+output = [$.consumer, 'on', 'error']

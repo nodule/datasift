@@ -1,23 +1,23 @@
-var consumer = new datasift(input.username, input.api_key);
+var consumer = new datasift($.username, $.api_key);
 consumer.connect();
 
 //Emitted when stream is connected
-if (input.connect) consumer.on('connect', input.connect);
+if ($.connect) consumer.on('connect', $.connect);
 
 //Emitted when there is an error
-if (input.error) consumer.on('error', input.error);
+if ($.error) consumer.on('error', $.error);
 
 //Emitted when there is a warning
-if (input.warning) consumer.on('warning', input.warning);
+if ($.warning) consumer.on('warning', $.warning);
 
 //Emitted when disconnected
-if (input.disconnect) consumer.on('disconnect', input.disconnect);
+if ($.disconnect) consumer.on('disconnect', $.disconnect);
 
 //Emitted when an interaction is received
-if (input.interaction) consumer.on('interaction', input.interaction);
+if ($.interaction) consumer.on('interaction', $.interaction);
 
 //Emitted when a delete message is received
-if (input.delete) consumer.on('delete', input.delete);
+if ($.delete) consumer.on('delete', $.delete);
 
 output = {
   consumer: consumer
