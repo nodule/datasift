@@ -20,5 +20,5 @@ if ($.interaction) consumer.on('interaction', $.interaction);
 if ($.delete) consumer.on('delete', $.delete);
 
 output = {
-  consumer: consumer
+  consumer: $.create(consumer)
 };
