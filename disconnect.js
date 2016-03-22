@@ -20,9 +20,9 @@ module.exports = {
       }
     }
   },
-  fn: function disconnect(input, output, state, done, cb, on) {
+  fn: function disconnect(input, $, output, state, done, cb, on) {
     var r = function() {
-      input.consumer.disconnect('disconnect', function disconnectCallback(out) {
+      $.consumer.disconnect('disconnect', function disconnectCallback(out) {
         cb({
           out: out
         });

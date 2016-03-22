@@ -19,7 +19,7 @@ module.exports = {
         required: "true",
         fn: function __HASH__(data, x, source, state, input, output) {
           var r = function() {
-            input.consumer.subscribe(data);
+            $.consumer.subscribe($.hash);
           }.call(this);
           return {
             state: state,

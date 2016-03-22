@@ -43,7 +43,7 @@
       "ns": "datasift",
       "name": "api",
       "env": "server",
-      "fn": "var consumer = new datasift(input.username, input.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: consumer\n};\n"
+      "fn": "var consumer = new datasift($.username, $.api_key);\nconsumer.connect();\n\noutput = {\n  consumer: $.create(consumer)\n};\n"
     },
     {
       "dependencies": {
@@ -108,7 +108,7 @@
       "ns": "datasift",
       "name": "connect",
       "env": "server",
-      "fn": "var consumer = new datasift(input.username, input.api_key);\nconsumer.connect();\n\n//Emitted when stream is connected\nif (input.connect) consumer.on('connect', input.connect);\n\n//Emitted when there is an error\nif (input.error) consumer.on('error', input.error);\n\n//Emitted when there is a warning\nif (input.warning) consumer.on('warning', input.warning);\n\n//Emitted when disconnected\nif (iput.disconnect) consumer.on('disconnect', input.disconnect);\n\n//Emitted when an interaction is received\nif (input.interaction) consumer.on('interaction', input.interaction);\n\n//Emitted when a delete message is received\nif (input.delete) consumer.on('delete', input.delete);\n\noutput = {\n  consumer: consumer\n};\n"
+      "fn": "var consumer = new datasift($.username, $.api_key);\nconsumer.connect();\n\n//Emitted when stream is connected\nif ($.connect) consumer.on('connect', $.connect);\n\n//Emitted when there is an error\nif ($.error) consumer.on('error', $.error);\n\n//Emitted when there is a warning\nif ($.warning) consumer.on('warning', $.warning);\n\n//Emitted when disconnected\nif ($.disconnect) consumer.on('disconnect', $.disconnect);\n\n//Emitted when an interaction is received\nif ($.interaction) consumer.on('interaction', $.interaction);\n\n//Emitted when a delete message is received\nif ($.delete) consumer.on('delete', $.delete);\n\noutput = {\n  consumer: $.create(consumer)\n};\n"
     },
     {
       "ports": {
@@ -133,7 +133,7 @@
       "ns": "datasift",
       "name": "delete",
       "env": "server",
-      "fn": "output = [input.consumer, 'on', 'delete']\n"
+      "fn": "output = [$.consumer, 'on', 'delete']\n"
     },
     {
       "ports": {
@@ -158,7 +158,7 @@
       "ns": "datasift",
       "name": "disconnect",
       "env": "server",
-      "fn": "output = [input.consumer, 'on', 'disconnect']\n"
+      "fn": "output = [$.consumer, 'on', 'disconnect']\n"
     },
     {
       "ports": {
@@ -183,7 +183,7 @@
       "ns": "datasift",
       "name": "error",
       "env": "server",
-      "fn": "output = [input.consumer, 'on', 'error']\n"
+      "fn": "output = [$.consumer, 'on', 'error']\n"
     },
     {
       "ports": {
@@ -208,7 +208,7 @@
       "ns": "datasift",
       "name": "interaction",
       "env": "server",
-      "fn": "output = [input.consumer, 'on', 'interaction']\n"
+      "fn": "output = [$.consumer, 'on', 'interaction']\n"
     },
     {
       "ports": {
@@ -234,7 +234,7 @@
       "ns": "datasift",
       "name": "subscribe",
       "env": "server",
-      "fn": "input.consumer.subscribe(input.hash);\n"
+      "fn": "on.input.hash = function() {\n  $.consumer.subscribe($.hash);\n};\n"
     },
     {
       "ports": {
@@ -260,7 +260,7 @@
       "ns": "datasift",
       "name": "unsubscribe",
       "env": "server",
-      "fn": "input.consumer.unsubscribe(input.hash);\n"
+      "fn": "on.input.hash = function() {\n  $.consumer.unsubscribe($.hash);\n};\n"
     },
     {
       "ports": {
@@ -285,7 +285,7 @@
       "ns": "datasift",
       "name": "warning",
       "env": "server",
-      "fn": "output = [input.consumer, 'on', 'warning']\n"
+      "fn": "output = [$.consumer, 'on', 'warning']\n"
     }
   ],
   "twigs": [],

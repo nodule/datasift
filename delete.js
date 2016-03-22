@@ -20,9 +20,9 @@ module.exports = {
       }
     }
   },
-  fn: function _delete(input, output, state, done, cb, on) {
+  fn: function _delete(input, $, output, state, done, cb, on) {
     var r = function() {
-      input.consumer.delete('delete', function deleteCallback(data) {
+      $.consumer.delete('delete', function deleteCallback(data) {
         cb({
           data: data
         });

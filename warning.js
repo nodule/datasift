@@ -20,9 +20,9 @@ module.exports = {
       }
     }
   },
-  fn: function warning(input, output, state, done, cb, on) {
+  fn: function warning(input, $, output, state, done, cb, on) {
     var r = function() {
-      input.consumer.warning('warning', function warningCallback(warning) {
+      $.consumer.warning('warning', function warningCallback(warning) {
         cb({
           warning: warning
         });

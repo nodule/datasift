@@ -20,9 +20,9 @@ module.exports = {
       }
     }
   },
-  fn: function interaction(input, output, state, done, cb, on) {
+  fn: function interaction(input, $, output, state, done, cb, on) {
     var r = function() {
-      input.consumer.interaction('interaction', function interactionCallback(data) {
+      $.consumer.interaction('interaction', function interactionCallback(data) {
         cb({
           data: data
         });

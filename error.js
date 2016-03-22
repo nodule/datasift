@@ -20,9 +20,9 @@ module.exports = {
       }
     }
   },
-  fn: function error(input, output, state, done, cb, on) {
+  fn: function error(input, $, output, state, done, cb, on) {
     var r = function() {
-      input.consumer.error('error', function errorCallback(error) {
+      $.consumer.error('error', function errorCallback(error) {
         cb({
           error: error
         });
