@@ -17,7 +17,7 @@ module.exports = {
         title: "Service Hash",
         type: "string",
         required: "true",
-        fn: function __HASH__(data, x, source, state, input, output) {
+        fn: function __HASH__(data, source, state, input, $, output) {
           var r = function() {
             $.consumer.subscribe($.hash);
           }.call(this);
