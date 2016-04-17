@@ -21,12 +21,12 @@
           "username": {
             "title": "Username",
             "type": "string",
-            "required": "true"
+            "required": true
           },
           "api_key": {
             "title": "Api Key",
             "type": "string",
-            "required": "true"
+            "required": true
           }
         },
         "output": {
@@ -56,42 +56,42 @@
           "username": {
             "title": "Username",
             "type": "string",
-            "required": "true"
+            "required": true
           },
           "api_key": {
             "title": "Api Key",
             "type": "string",
-            "required": "true"
+            "required": true
           },
           "connect": {
             "title": "Connect",
             "type": "function",
-            "required": "false"
+            "required": false
           },
           "error": {
             "title": "Error",
             "type": "function",
-            "required": "false"
+            "required": false
           },
           "warning": {
             "title": "Warning",
             "type": "function",
-            "required": "false"
+            "required": false
           },
           "disconnect": {
             "title": "Disconnect",
             "type": "function",
-            "required": "false"
+            "required": false
           },
           "interaction": {
             "title": "Interaction",
             "type": "function",
-            "required": "false"
+            "required": false
           },
           "delete": {
             "title": "Delete",
             "type": "function",
-            "required": "false"
+            "required": false
           }
         },
         "output": {
@@ -116,7 +116,7 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           }
         },
         "output": {
@@ -141,7 +141,7 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           }
         },
         "output": {
@@ -166,7 +166,7 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           }
         },
         "output": {
@@ -191,7 +191,7 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           }
         },
         "output": {
@@ -216,12 +216,12 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           },
           "hash": {
             "title": "Service Hash",
             "type": "string",
-            "required": "true"
+            "required": true
           }
         },
         "output": {}
@@ -242,12 +242,12 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           },
           "hash": {
             "title": "Service Hash",
             "type": "string",
-            "required": "true"
+            "required": true
           }
         },
         "output": {}
@@ -268,7 +268,7 @@
           "consumer": {
             "title": "Consumer",
             "type": "function",
-            "required": "true"
+            "required": true
           }
         },
         "output": {

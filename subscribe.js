@@ -11,12 +11,12 @@ module.exports = {
       consumer: {
         title: "Consumer",
         type: "function",
-        required: "true"
+        required: true
       },
       hash: {
         title: "Service Hash",
         type: "string",
-        required: "true",
+        required: true,
         fn: function __HASH__(data, source, state, input, $, output) {
           var r = function() {
             $.consumer.subscribe($.hash);

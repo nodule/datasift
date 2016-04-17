@@ -11,7 +11,7 @@ module.exports = {
       consumer: {
         title: "Consumer",
         type: "function",
-        required: "true"
+        required: true
       }
     },
     output: {
